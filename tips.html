@@ -27,8 +27,8 @@ function tips (){
     console.log("Getting form values")
     amount = document.getElementById("amount").value
     tip = document.getElementById("tip").value
-    out = document.getElementById("result").
-    out.innerHTML = "Tip amounts by increase of "  + amount + " are: " + tip
+    out = document.getElementById("result")
+    out.innerHTML = "Tip amounts by increase of "  
     for(i = 0; i <10; i++){
          chooseOp()
 
@@ -38,39 +38,8 @@ function tips (){
 }
 </script>
 
-<form>
-    <input type="radio" id="*"  name="calc" value="times" checked >
-    <label for="*">*</label></br>
-
-    <input type="radio" id="/" name="calc" value="divide">
-    <label for="/">/</label></br>
-
-    <input type="radio" id="**" name ="calc" value="exponent">
-    <label for="**">**</label></br>
-
-    <input type="button" onclick="resolveRadio()" value="Get values from radio group">
-  </form>
-
-  <script>
-      function chooseOp(){
-          amount = document.getElementById("amount").value
-          tip = document.getElementById("tip").value
-          if(document.getElementById('*').checked){
-              return amount*tip
-          }
-          else if(document.getElementById('/').checked){
-              return amount/tip
-          }
-          else if(document.getElementById('**').checked){
-              return amount**tip
-          }
-      }
-
-  </script>
 
 
-
-  </script>
 
 
 </body>
